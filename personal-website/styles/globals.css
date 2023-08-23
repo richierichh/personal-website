@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif+JP:wght@500;600&family=Pacifico&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap');
+
+html{ 
+  scroll-behavior: smooth;
+  font-family: lato;
+  background: #141414;
+}
+@layer base{ 
+  body { 
+    @apply font-[lato];
+    @apply text-white
+  }
+  li { 
+    @apply px-4;
+    @apply cursor-pointer; 
+  }
+}
+/* Container to hold the timeline */
+.timeline-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* The vertical line of the timeline */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%; /* To center the line */
+  width: 2px;
+  background: white;
+}
+
+/* A single event on the timeline */
+.timeline-event {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.timeline-image-2{ 
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -50%; 
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.timeline-image-3{ 
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -130%; 
+  transform: translateX(-50%);
+  z-index: 2;
+}
+/* Textbox of the event */
+.timeline-textbox {
+  position: relative;
+  max-width: 635px;
+  margin-left: -90px; /* Adjust depending on size of your image or other factors */
+  z-index: 1;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.timeline-textbox::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 20px;
+  right:-10px;  /* Places the arrow to the left of the box */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:#4338CA;/* Inherit the textbox's background color */
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  border-radius: 5px;
+}
+
+.timeline-textbox-2{
+  position: relative;
+  max-width: 635px;
+  left: 10%; 
+  bottom: -250px;
+  z-index: 1;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.timeline-textbox-2::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 20px;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:#64748b;
+  clip-path: polygon(0% 50%, 100% 0, 100% 100%); 
+  border-radius: 5px;
+}
+
+.timeline-textbox-3{
+
+  max-width: 635px;
+  right: 50%;
+  bottom: -800px;
+  z-index: 1;
+  padding: 15px;
+  border-radius: 5px;
+}
+
