@@ -3,11 +3,14 @@ import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import Image from "next/image";
 import logo from '../assets/logo.png';
+import { useTheme } from "next-themes"
+import { RiMoonFill, RiSunLine } from "react-icons/ri"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
-
+    const { systemTheme, theme, setTheme } = useTheme()
+    const currentTheme = theme === "system" ? systemTheme : theme
     return (
         <>
             <div className='fixed w-full h-[80px] flex items-center px-4 justify-between bg-[#141414]'>
@@ -34,6 +37,16 @@ const Navbar = () => {
                     <li className='py-6'>Contact</li>
                     <li className='py-6'>Resume</li>
                 </ul>
+                {currentTheme === "dark" ? (
+                <button
+                  onClick={() => setTheme("light")} className="bg-slate-100 p-2 rounded-xl m-10">
+                  <RiSunLine size={25} color="black " />
+                </button>
+              ) : (
+                <button onClick={() => setTheme("dark")} className="bg-slate-100 p-2 rounded-xl m-10 ">
+                  <RiMoonFill size={25} color="black" />
+                </button>
+                )}
             </div>
 
             <div className='flex pt-40 mt-2 mr-4 fixed'> 
@@ -57,6 +70,9 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul>
+            <div> 
+           
+            </div>
             </div>
         </>
     )

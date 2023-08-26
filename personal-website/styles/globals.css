@@ -132,3 +132,10 @@ html{
   border-radius: 5px;
 }
 
+html.dark {
+  background-color: #141414;
+}
+
+html.light {
+  background-color: #EEF0F2;
+}

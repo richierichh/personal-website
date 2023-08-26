@@ -1,20 +1,23 @@
-import Head from 'next/Head'
-import { Inter } from 'next/font/google'
-import Navbar from '../components/Navbar'
-import Home from '../components/Home'
-import Experience from '@/components/Experience'
+import Head from 'next/Head';
+import Navbar from '../components/Navbar';
+import Home from '../components/Home';
+import Experience from '@/components/Experience';
+import { ThemeProvider } from 'next-themes';
+import Projects from '../components/Projects';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function index() {
+export default function Index() {
   return (
-    <div> 
+    <div className="dark:bg-stone-900">
       <Head>
         <title> Richard Liao </title>
       </Head>
-     <Navbar/>
-     <Home/>
-     <Experience/>
+
+      <ThemeProvider enableSystem={true} attribute="class">
+        <Navbar />
+        <Home />
+        <Experience />
+        <Projects/>
+      </ThemeProvider>
     </div>
-  )
+  );
 }
