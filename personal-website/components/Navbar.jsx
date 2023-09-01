@@ -8,12 +8,13 @@ import { RiMoonFill, RiSunLine } from "react-icons/ri"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+    
     const handleClick = () => setNav(!nav);
     const { systemTheme, theme, setTheme } = useTheme()
     const currentTheme = theme === "system" ? systemTheme : theme
     return (
         <>
-            <div className='fixed w-full h-[80px] flex items-center px-4 justify-between bg-[#141414]'>
+            <div className='fixed w-full h-[80px] flex items-center px-4 justify-between bg-[#141414] z-1000'>
                 <div className='pt-2 pl-8'>
                     <Image src={logo} width={60} alt='logo image' />
                 </div>
@@ -26,14 +27,14 @@ const Navbar = () => {
                     <li>Resume</li>
                 </ul>
 
-                <div onClick={handleClick} className='md:hidden z-10'>
+                <div onClick={handleClick} className='md:hidden z-1000'>
                     {!nav ? <FaBars /> : <FaTimes />}
                 </div>
 
                 <ul className={!nav ? 'hidden' : 'text-4xl absolute top-0 left-0 w-full h-screen flex flex-col justify-center text-[#EEF0F2]'}>
-                    <li className='py-6'>Home</li>
-                    <li className='py-6'>Experience</li>
-                    <li className='py-6'>Projects</li>
+                    <li className='py-6'><a href="#home" onClick={() => handleClick("close")}>Home</a></li>
+                    <li className='py-6'><a href="#experience" onClick={() => handleClick("close")}>Experience</a></li>
+                    <li className='py-6'><a href="#projects" onClick={() => handleClick("close")}>Projects</a></li>
                     <li className='py-6'>Contact</li>
                     <li className='py-6'>Resume</li>
                 </ul>
@@ -49,7 +50,7 @@ const Navbar = () => {
                 )}
             </div>
 
-            <div className='flex pt-40 mt-2 mr-4 fixed'> 
+            <div className='flex pt-40 ml-14 absolute'> 
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center'>
                         <a className='flex justify-between items-center w-full text-white'

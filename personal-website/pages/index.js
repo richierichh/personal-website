@@ -2,12 +2,13 @@ import Head from 'next/Head';
 import Navbar from '../components/Navbar';
 import Home from '../components/Home';
 import Experience from '@/components/Experience';
+import Footer from '../components/Footer';
 import { ThemeProvider } from 'next-themes';
 import Projects from '../components/Projects';
 
 export default function Index() {
   return (
-    <div className="dark:bg-stone-900">
+    <div className="dark:bg-stone-900 ">
       <Head>
         <title> Richard Liao </title>
       </Head>
@@ -15,8 +16,9 @@ export default function Index() {
       <ThemeProvider enableSystem={true} attribute="class">
         <Navbar />
         <Home />
-        <Experience />
+        <Experience/>
         <Projects/>
+        <Footer/>
       </ThemeProvider>
     </div>
   );
