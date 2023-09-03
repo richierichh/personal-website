@@ -14,7 +14,7 @@ html{
 @layer base{ 
   body { 
     @apply text-white;
-   
+    @apply font-[lato];
   }
   li { 
     @apply px-4;
