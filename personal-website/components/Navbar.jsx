@@ -48,32 +48,8 @@ const Navbar = () => {
                   <RiMoonFill size={25} color="black" />
                 </button>
                 )}
-            </div>
 
-            <div className='flex pt-40 ml-14 absolute'> 
-                <ul>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center'>
-                        <a className='flex justify-between items-center w-full text-white'
-                            href="https://www.linkedin.com/in/richard-pierre-liao/" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedinIn className='hover:fill-[#6F8695]' size={30} />
-                        </a>
-                    </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center'>
-                        <a className='flex justify-between items-center w-full text-white'
-                            href="https://github.com/richierichh" target="_blank" rel="noopener noreferrer">
-                            <FaGithub className='hover:fill-[#6F8695]' size={30} />
-                        </a>
-                    </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center'>
-                        <a className='flex justify-between items-center w-full text-white'
-                            href="mailto:liao3480@mylaurier.ca">
-                            <HiOutlineMail className='hover:fill-[#6F8695]' size={30} />
-                        </a>
-                    </li>
-                </ul>
-            <div> 
            
-            </div>
             </div>
         </>
     )

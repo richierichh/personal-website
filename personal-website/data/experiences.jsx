@@ -2,6 +2,7 @@ import civiconnect from '../assets/civiconnect.jpeg';
 import ontario from '../assets/ontario.jpeg';
 import markel from '../assets/markel.jpeg';
 import cibc from '../assets/cibc.jpeg';
+import laurier from '../assets/laurier.jpeg';
 
 const experiences = [
   {
@@ -26,7 +27,7 @@ const experiences = [
   },
   {
     title: "Software Developer",
-    company: "Ministry of Public and Business Service Delivery",
+    company: "Ministry of Public & Business Service Delivery",
     date: "May 2022 - Aug 2022",
     tasks: [
       "Designed and developed multiple Microsoft Power Apps to automate business processes",
@@ -43,7 +44,16 @@ const experiences = [
       "Prepared financial raters, issued, declined and renewed 500+ accounts"
     ],
     image: markel
+  },
+  {
+    title: "Wilfrid Laurier University",
+    company: "Computer Science & Business Administration Double Degree",
+    date: "Sep 2020 - Apr 2025",
+    tasks: [
+    ],
+    image: laurier
   }
+
 ];
 
 export default experiences;

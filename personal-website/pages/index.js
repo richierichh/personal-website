@@ -5,6 +5,7 @@ import Experience from '@/components/Experience';
 import Footer from '../components/Footer';
 import { ThemeProvider } from 'next-themes';
 import Projects from '../components/Projects';
+import About from '@/components/About';
 
 export default function Index() {
   return (
@@ -14,10 +15,11 @@ export default function Index() {
       </Head>
 
       <ThemeProvider enableSystem={true} attribute="class">
-        <Navbar />
-        <Home />
+        <Navbar/>
+        <Home/>
         <Experience/>
         <Projects/>
+        <About/>
         <Footer/>
       </ThemeProvider>
     </div>

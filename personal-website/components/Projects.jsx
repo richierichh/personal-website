@@ -23,8 +23,8 @@ const projectItems = [
     link: "https://richardsmerntodolist.netlify.app/#",
   },
     {
-      name: "Apple Stock Price Predictor",
-      description: "Predicted Apples stock price 30 days out while comparing the accuracy of linear regression vs decision tree models using Pandas, Numpy, SkLearn and ",
+      name: "Stock Price Predictor",
+      description: "Predicted Apples stock price 30 days out while comparing the accuracy of linear regression vs decision tree models using Pandas, Numpy, SkLearn and Matplotlib",
       image: "/stock.png",
       github: "https://github.com/richierichh/Apple-Stock-Price-Predictor",
       link: "https://github.com/richierichh/Apple-Stock-Price-Predictor/blob/main/Stock_Predictor.ipynb",
@@ -32,7 +32,7 @@ const projectItems = [
     {
       name: "Personal Website",
       description:
-        "My personal portfolio website built with Next.js, Tailwind CSS, and Vercel.",
+        "My personal portfolio website built with JavaScript,  Next.js, Tailwind CSS, and Vercel.",
       image: "/portfolio.png",
       github: "https://github.com/richierichh/personal-website",
       link: "richardliao.me",
@@ -44,14 +44,13 @@ const projectItems = [
       <section className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl" id="projects">
         <h1 className="mt-52 text-center font-bold text-4xl">
           Projects
-          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+          <hr className="w-10 h-1 mx-auto my-4 bg-gradient-to-r from-blue-200 to-cyan-200 rounded"></hr>
         </h1>
   
         <div className="flex flex-col space-y-28 mx-auto">
           {projectItems.map((project, idx) => {
             return (
-              <div key={idx}>
-              
+              <div key={idx}>   
                   <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                     <div className=" md:w-1/2">
                       <Link href={project.link}>
@@ -74,8 +73,7 @@ const projectItems = [
                   </div>
               </div>
             )
-          })}
-          
+          })}   
         </div>
       </section>
     )
