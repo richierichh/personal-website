@@ -5,7 +5,7 @@ import cibc from '../assets/cibc.jpeg';
 
 const experiences = [
   {
-    title: "Business Systems Analyst",
+    title: "Business Systems Analyst Developer",
     company: "CIBC Capital Markets",
     date: "Sep 2023 - Dec 2023",
     tasks: [
@@ -35,7 +35,7 @@ const experiences = [
     image: ontario
   },
   {
-    title: "Underwriting Analyst",
+    title: "Financial analyst",
     company: "Markel Canada",
     date: "May 2021 - Sep 2021",
     tasks: [

@@ -32,7 +32,7 @@ const projectItems = [
       name: "Personal Website",
       description:
         "My personal portfolio website built with JavaScript,  Next.js, Tailwind CSS, and Vercel.",
-      image: "/portfolio.png",
+      image: "/portfolio-site.png",
       github: "https://github.com/richierichh/personal-website",
       link: "richardliao.me",
     },
@@ -40,9 +40,9 @@ const projectItems = [
   ]
   const ProjectsSection = () => {
     return (
-      <div id="projects" >
-      <section className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl pt-1 mt-6">
-        <h1 className="mt-52 text-center font-bold text-4xl">
+      <div id="Projects" >
+      <section className="mx-auto max-w-3xl sm:px-6 md:max-w-5xl ">
+        <h1 className="mt-28 pt-28 text-center font-bold text-4xl">
           Projects
           <hr className="w-10 h-1 mx-auto my-4 bg-gradient-to-r from-blue-200 to-cyan-200 rounded"></hr>
         </h1>

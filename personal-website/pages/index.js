@@ -5,7 +5,8 @@ import Experience from '@/components/Experience';
 import Footer from '../components/Footer';
 import { ThemeProvider } from 'next-themes';
 import Projects from '../components/Projects';
-import About from '../components/About'
+import About from '../components/About';
+
 export default function Index() {
   return (
     <div className="dark:bg-stone-900 ">
