@@ -45,8 +45,10 @@ function JobExperience({ title, company, date, tasks, image, index }) {
 
 function Experience() {
   return (
-    <div id ='Experience' className='mx-auto max-w-3xl sm:px-6 md:max-w-6xl  '>
-      <h1  className='mt-28 pt-28 mb-28 text-center font-bold text-4xl'>
+    <div id ='Experience' className='mx-auto max-w-3xl sm:px-1 md:max-w-6xl  '>
+
+      <h1 className='mt-8 sm:mt-28 pt-8 sm:pt-28 mb-8 sm:mb-28 text-center font-bold text-4xl'>
+
         Experience
         <hr className="w-10 h-1 mx-auto my-4 bg-gradient-to-r from-blue-200 to-cyan-200 rounded"></hr>
       </h1>

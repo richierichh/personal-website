@@ -33,11 +33,11 @@ const Navbar = () => {
              
                 </div>
 
-                <ul className={`${!nav ? 'hidden' : 'text-4xl absolute top-0 left-0 w-full h-screen flex flex-col justify-center'} ${textColor} z-1000`}>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Experience">Experience</a></li>
-                    <li><a href="#Projects">Projects</a></li>
+                <ul className={`${!nav ? 'hidden' : ' text-4xl absolute top-10 flex flex-col  bg-white/40  mt-10    '} ${textColor} z-1000`}>
+                    <li className='m-10'><a href="#Home">Home</a></li>
+                    <li className='m-10'><a href="#About">About</a></li>
+                    <li className='m-10'><a href="#Experience">Experience</a></li>
+                    <li className='m-10'><a href="#Projects">Projects</a></li>
                 </ul>
 
                 {currentTheme === "dark" ? (
