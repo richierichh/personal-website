@@ -5,7 +5,7 @@ import cibc from '../assets/cibc.jpeg';
 
 const experiences = [
   {
-    title: "Business Systems Analyst Developer",
+    title: "Business Systems Developer",
     company: "CIBC Capital Markets",
     date: "Sep 2023 - Dec 2023",
     tasks: [

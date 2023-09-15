@@ -5,7 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 function footer() {
   return (
     <footer className="text-center">
-      <p className="mt-12 mb-4">Designed and developed by Richard Liao ©</p>
+      <p className="mt-28 mb-4">Designed and developed by Richard Liao ©</p>
 
       <ul className="flex justify-center items-center space-x-4 mb-4"> {/* Added space between icons */}
         <li>

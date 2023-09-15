@@ -7,7 +7,6 @@ import { RiMoonFill, RiSunLine } from "react-icons/ri"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
-    
     const handleClick = () => setNav(!nav);
     const { systemTheme, theme, setTheme } = useTheme()
     const currentTheme = theme === "system" ? systemTheme : theme
@@ -31,6 +30,7 @@ const Navbar = () => {
 
                 <div onClick={handleClick} className='md:hidden z-1000'>
                     {!nav ? <FaBars /> : <FaTimes />}
+             
                 </div>
 
                 <ul className={`${!nav ? 'hidden' : 'text-4xl absolute top-0 left-0 w-full h-screen flex flex-col justify-center'} ${textColor} z-1000`}>
