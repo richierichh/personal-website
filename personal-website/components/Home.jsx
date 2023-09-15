@@ -1,4 +1,3 @@
-
 import memoji from '../assets/memoji.jpeg';
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
@@ -11,7 +10,7 @@ const Home = () => {
       <Image className='rounded-full h-96 w-96 object-cover object-center' src={memoji} alt="memoji" /> 
       </div> 
       <div className='text-center mx-auto max-w-3xl px-4 sm:px-6 md:max-w-3xl '>
-          <p className='font-lato text-4xl sm:text-5xl md:text-6xl lg:text-7xl pb-4'>Hello 👋, I'm</p>
+          <p className='font-lato text-4xl sm:text-5xl md:text-6xl lg:text-7xl pb-4'>Hello 👋, I&apos;m</p>
           <p className='font-lato text-xl sm:text-4xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-r from-blue-200 to-cyan-200 bg-clip-text text-transparent'>Richard Liao.</p>
           <p className='font-lato text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold'>Software Engineer</p>
           <p className ='font-lato text-xl sm:text-xl md:text-xl font-bold pt-4'>Computer Science and Business @Wilfrid Laurier University</p>
@@ -35,10 +34,7 @@ const Home = () => {
           </div>
           <HiArrowDown className="flex flex-row justify-center animate-bounce" size={35}/>
       </div>
-      
-
   </div>
-  
   );
 }
 
