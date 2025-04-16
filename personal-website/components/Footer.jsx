@@ -4,9 +4,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 
 function footer() {
   return (
-    <footer className="text-center">
-      <p className="mt-28 mb-4">Designed and developed by Richard Liao ©</p>
-
+    <div>
       <ul className="flex justify-center items-center space-x-4 mb-4"> {/* Added space between icons */}
         <li>
           <a href="https://www.linkedin.com/in/richard-pierre-liao/" target="_blank" rel="noopener noreferrer">
@@ -24,7 +22,10 @@ function footer() {
           </a>
         </li>
       </ul>
+      <footer className="text-center mb-6">
+      Designed and developed by Richard Liao ©
     </footer>
+    </div>
   )
 }
 

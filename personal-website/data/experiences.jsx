@@ -2,25 +2,35 @@ import civiconnect from '../assets/civiconnect.jpeg';
 import ontario from '../assets/ontario.jpeg';
 import markel from '../assets/markel.jpeg';
 import cibc from '../assets/cibc.jpeg';
+import dayforce from '../assets/dayforce_logo.jpg';
 
 const experiences = [
+  { 
+  title: "Software Developer",
+  company: "Dayforce",
+  date: "Jan 2024 - August 2024",
+  tasks: [
+  "Optimized the codebase, fixed bugs and wrote test automation scripts for the scheduling app using React, C# and SQL"
+  ],
+  image: dayforce
+  },
   {
-    title: "Business Systems Developer",
+    title: "Software Developer",
     company: "CIBC Capital Markets",
     date: "Sep 2023 - Dec 2023",
     tasks: [
-      "Spearheading the optimization of business processes through comprehensive systems analysis and solution-driven recommendations",
+      "Developed a NLP AI Chatbot capable of interpreting prompts and executing correlated SQL queries of fixed income bonds",
+      "Implemented trade report generation to Excel reducing processing time by 2+ hours weekly"
     ],
     image: cibc
   },
   {
-    title: "Web Developer",
+    title: "Software Developer",
     company: "Civiconnect",
     date: "Jan 2023 - Apr 2023",
     tasks: [
       "Developed 2 websites for businesses using JavaScript, React, Figma, and Webflow",
       "Implemented Strapi as a headless CMS ensuring easy accessibility to modify web components",
-      "Implemented search engine optimization (SEO) resulting in 45% improvement in website discoverability"
     ],
     image: civiconnect
   },
@@ -35,7 +45,7 @@ const experiences = [
     image: ontario
   },
   {
-    title: "Financial analyst",
+    title: "Analyst",
     company: "Markel Canada",
     date: "May 2021 - Sep 2021",
     tasks: [

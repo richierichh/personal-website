@@ -6,18 +6,23 @@ import Footer from '../components/Footer';
 import { ThemeProvider } from 'next-themes';
 import Projects from '../components/Projects';
 import About from '../components/About';
+import Resume from '../components/Resume';
+import Skills from '../components/Skills';
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Index() {
   return (
-    <div className="dark:bg-stone-900 ">
+    <div >
+      <Analytics/>
       <Head>
         <title> Richard Liao </title>
       </Head>
-      <ThemeProvider enableSystem={true} attribute="class">
+      <ThemeProvider attribute="class">
         <Navbar />
         <Home />
         <About/>
         <Experience/>
+        <Skills/>
         <Projects/>
         <Footer/>
       </ThemeProvider>
